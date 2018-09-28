@@ -34,34 +34,33 @@ void init_buff(){
 	for(i=0;i<8;i++){
 		data_buffer[i]=14;
 	}
+	return;
 }
 
 void put_item(){
-	sem_wait(&sem_count);
-	count++;
-	sem_post(&sem_count);
-	sem_wait(&sem_access_buffer);
-	data_buffer[put_index%8]=put_index;
-	put_index++;
-	sem_post(&sem_access_buffer);
-	
+	//sem_wait(&sem_access_buffer);
+	int i;
+	for (i=0;i<200;i++){
+		sem_wait(&sem_access_buffer);
+		data_buffer[i]=i;
+		sem_post(&sem_access_buffer);
+		sem_post(&sem_count);
+		put_index++;
+		return;
+	}
 }
 
 int get_item(){
-	int data;
-	sem_wait(&sem_count);
-	sem_wait(&sem_access_buffer);
-	if (count > 0){
-		data=data_buffer[get_index%8];
+	int data, i;
+	for (i=0;i<200;i++){
+		// wait for the first data to be made
+		sem_wait(&sem_count);
+		//sem_post(&sem_count);
+		sem_wait(&sem_access_buffer);
+		data=data_buffer[i];
+		sem_post(&sem_access_buffer);
 		get_index++;
-		count--;
 	}
-	else{
-		//sem_wait(&sem_count);
-	}
-
-	sem_post(&sem_access_buffer);
-	
 	return data;
 	//sem_post(sem_put_caught_up);
 }
@@ -71,7 +70,7 @@ int get_item(){
 // Main
 //___________________________________________________________________
 int main(int argc, char *argv[]) {
-	int result, p;
+	int result, p, data;
 
 	printf("Hello This is Lab_3.c\n\r");
 	fflush(stdout);
@@ -82,6 +81,9 @@ int main(int argc, char *argv[]) {
 	init_buff();
 
 	//start threads
+	struct sched_param get_sched;
+	struct sched_param put_sched;
+
 	pthread_t put_item_thread;
 	pthread_t get_item_thread;
 
@@ -92,7 +94,10 @@ int main(int argc, char *argv[]) {
 
 	for(p=0; p<200; p++ )
 	 { wait(1);
-	   printf("%d", data_buffer[1]);
+	 //data=get_item();
+	   printf("data: %d\n\r", data_buffer[0]);
+	   printf("countget: %d\n\r",get_index);
+	   printf("countput: %d\n\r",put_index);
 	 }
 
 	exit(0); // never exit?
