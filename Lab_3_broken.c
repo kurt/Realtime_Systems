@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
 	
 	// semaphore inits
 	sem_init(&sem_access_buffer,0,1);
-	sem_init(&sem_data_in_buffer,0,1);
+	sem_init(&sem_data_in_buffer,0,0);
 	
 	//Initialize Buffer
 	init_buff();
