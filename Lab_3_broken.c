@@ -17,14 +17,14 @@
 
 
 // Global Variables
-int data_buffer[8];
-int count=0;
-int put_index=0;
-int get_index=0;
+int data_buffer[200];
+//int count=0;
+//int put_index=0;
+//int get_index=0;
 
 // Semaphore Definitions
 sem_t sem_access_buffer;
-sem_t sem_count;
+sem_t sem_data_in_buffer;
 
 // Function Definitions
 void checkresult( int result, char *text );
@@ -38,30 +38,31 @@ void init_buff(){
 }
 
 void put_item(){
+	// puts items into buffer
 	//sem_wait(&sem_access_buffer);
 	int i;
-	for (i=0;i<200;i++){
+	while (1){
 		sem_wait(&sem_access_buffer);
 		data_buffer[i]=i;
 		sem_post(&sem_access_buffer);
-		sem_post(&sem_count);
+		sem_post(&sem_data_in_buffer);
 		put_index++;
 		return;
 	}
 }
 
-int get_item(){
+void get_item(){
 	int data, i;
-	for (i=0;i<200;i++){
+	while(1){
 		// wait for the first data to be made
-		sem_wait(&sem_count);
-		//sem_post(&sem_count);
+		sem_wait(&sem_data_in_buffer);
+		//sem_post(&sem_data_in_buffer);
 		sem_wait(&sem_access_buffer);
 		data=data_buffer[i];
+		data_buffer[i]=0;
 		sem_post(&sem_access_buffer);
 		get_index++;
 	}
-	return data;
 	//sem_post(sem_put_caught_up);
 }
 
@@ -74,10 +75,12 @@ int main(int argc, char *argv[]) {
 
 	printf("Hello This is Lab_3.c\n\r");
 	fflush(stdout);
+	
 	// semaphore inits
 	sem_init(&sem_access_buffer,0,1);
-	sem_init(&sem_count,0,1);
-	//call init_buff
+	sem_init(&sem_data_in_buffer,0,1);
+	
+	//Initialize Buffer
 	init_buff();
 
 	//start threads
@@ -93,11 +96,11 @@ int main(int argc, char *argv[]) {
 	checkresult(result,"put thread fail");
 
 	for(p=0; p<200; p++ )
-	 { wait(1);
+	 { sleep(1);
 	 //data=get_item();
-	   printf("data: %d\n\r", data_buffer[0]);
-	   printf("countget: %d\n\r",get_index);
-	   printf("countput: %d\n\r",put_index);
+	   //printf("data: %d\n\r", data_buffer[0]);
+	   //printf("countget: %d\n\r",get_index);
+	   //printf("countput: %d\n\r",put_index);
 	 }
 
 	exit(0); // never exit?
