@@ -46,7 +46,6 @@ void put_item(){
 		data_buffer[i]=i;
 		sem_post(&sem_access_buffer);
 		sem_post(&sem_data_in_buffer);
-		put_index++;
 		return;
 	}
 }
@@ -61,7 +60,6 @@ void get_item(){
 		data=data_buffer[i];
 		data_buffer[i]=0;
 		sem_post(&sem_access_buffer);
-		get_index++;
 	}
 	//sem_post(sem_put_caught_up);
 }
