@@ -1,0 +1,448 @@
+LAB 4 Testing
+
+messtestc.c running:
+_________________________________________________
+Results:
+
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+user has been called
+user connecting to channel. 
+
+user:go ahead, enter a string
+friend has been called
+friend connecting to channel. 
+
+friend: I am waiting to receive message from user.
+11
+user:waiting to send: = 11 =.
+friend: received = 11 = from user.
+user: received a reply from friend: = Got it! =
+friend: I am waiting to receive message from user.
+user:go ahead, enter a string
+_________________________________________________
+
+Two Producers and one consumer
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+user has been called
+user connecting to channel. 
+
+user:go ahead, enter a string
+friend has been called
+Producer has been called
+friend connecting to channel. 
+
+Producer connecting to channel
+friend: I am waiting to receive message from user.
+user wasnts to send DT;°friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+mcmcmcproducer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+
+producer: reply from friend Got it!user wasnts to send DT;°user:waiting to send: = mcmcmc =.
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+mcmcm
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = mcmcmc = from user.
+user: received a reply from friend: = Got it! =
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+user:go ahead, enter a string
+producer: reply from friend Got it!user wasnts to send DT;°user:waiting to send: = mcmcm =.
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = mcmcm = from user.
+user: received a reply from friend: = Got it! =
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+user:go ahead, enter a string
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+cmmcmcmdscproducer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+
+producer: reply from friend Got it!user wasnts to send DT;°user:waiting to send: = cmmcmcmdsc =.
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+cmmproducer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = cmmcmcmdsc = from user.
+user: received a reply from friend: = Got it! =
+cmc
+mfriend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+user:go ahead, enter a string
+producer: reply from friend Got it!user wasnts to send DT;°user:waiting to send: = cmmcmc =.
+cmcmc
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+producer: reply from friend Got it!user wasnts to send DT;°friend: I am waiting to receive message from user.
+friend: received = cmmcmc = from user.
+user: received a reply from friend: = Got it! =
+friend: I am waiting to receive message from user.
+friend: received = DT;° = from user.
+user:go ahead, enter a string
+producer: reply from friend Got it!user wasnts to send DT;°user:waiting to send: = mcmcmc =.
+________________________________________________________________________________________________________________________________________
+
+
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+user has been called
+user connecting to channel. 
+
+user:go ahead, enter a string
+friend has been called
+consumer has been called
+friend connecting to channel. 
+
+consumer connecting to channel. 
+
+friend: I am waiting to receive message from user.
+consumer: I am waiting to receive message from user.
+a
+user:waiting to send: = a =.
+consumer: received = a = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+b 
+user:waiting to send: = b  =.
+consumer: received = b  = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+c
+user:waiting to send: = c =.
+consumer: received = c = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+d
+user:waiting to send: = d =.
+consumer: received = d = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+e
+user:waiting to send: = e =.
+consumer: received = e = from user.
+user: received a reply from friend: = Got it! =
+fconsumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+
+user:waiting to send: = f =.
+consumer: received = f = from user.
+user: received a reply from friend: = Got it! =
+g
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = g =.
+consumer: received = g = from user.
+user: received a reply from friend: = Got it! =
+h
+iconsumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = h =.
+consumer: received = h = from user.
+user: received a reply from friend: = Got it! =
+
+j
+kconsumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = i =.
+consumer: received = i = from user.
+user: received a reply from friend: = Got it! =
+
+lconsumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = j =.
+consumer: received = j = from user.
+user: received a reply from friend: = Got it! =
+
+m
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = k =.
+consumer: received = k = from user.
+user: received a reply from friend: = Got it! =
+n
+opconsumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = l =.
+consumer: received = l = from user.
+user: received a reply from friend: = Got it! =
+
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = m =.
+consumer: received = m = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = n =.
+consumer: received = n = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+user:waiting to send: = op =.
+consumer: received = op = from user.
+user: received a reply from friend: = Got it! =
+consumer: I am waiting to receive message from user.
+user:go ahead, enter a string
+_________________________________________________________________________________________________________________________________________
+BETWEEN PROCESSES
+
+
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+PID=49173, PPID=28694  I am the main program.
+I am done waiting for PID[-1] with status 0
+Fork now..
+PID=53271, PPID=49173  I am the child.  
+friend has been called
+Exec now..
+friend connecting to channel. 
+user has been called
+
+user connecting to channel. 
+friend: I am waiting to receive message from user.
+
+user:go ahead, enter a string
+122
+user:waiting to send: = 122 =.
+friend: received = 122 = from user.
+user: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+5555
+user:waiting to send: = 5555 =.
+friend: received = 5555 = from user.
+user: received a reply from friend: = Got it! =
+484PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+8648
+user:waiting to send: = 4848648 =.
+friend: received = 4848648 = from user.
+user: received a reply from friend: = Got it! =
+7PID=49173, PPID=28694  I am the parent. 
+friend: I am waiting to receive message from user.
+user:go ahead, enter a string
+878
+user:waiting to send: = 7878 =.
+friend: received = 7878 = from user.
+user: received a reply from friend: = Got it! =
+8PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+48648
+user:waiting to send: = 848648 =.
+friend: received = 848648 = from user.
+user: received a reply from friend: = Got it! =
+48PID=49173, PPID=28694  I am the parent. 
+friend: I am waiting to receive message from user.
+user:go ahead, enter a string
+48
+user:waiting to send: = 4848 =.
+friend: received = 4848 = from user.
+user: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+
+
+________________________________________________________________________________________________________________________________________
+BETWEEN PROCESSORS MULTIPLE CONSUMERS
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+PID=49173, PPID=28694  I am the main program.
+I am done waiting for PID[-1] with status 1
+Fork now..
+PID=53271, PPID=49173  I am the child.  
+Exec now..
+user has been called
+user connecting to channel. 
+
+user:go ahead, enter a string
+PID=49173, PPID=28694  I am the parent.  
+Exec now..
+PID=49173, PPID=28694  I am the second child.  
+prod has been called
+friend has been called
+prod connecting to channel. 
+friend connecting to channel. 
+
+
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+2222PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+2
+user:waiting to send: = 22222 =.
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = 22222 = from user.
+user: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+222PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+22
+user:waiting to send: = 22222 =.
+2PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = 22222 = from user.
+user: received a reply from friend: = Got it! =
+2222
+PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+friend: received = hello = from user.
+user:waiting to send: = 22222 =.
+prod: received a reply from friend: = Got it! =
+222
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = 22222 = from user.
+user: received a reply from friend: = Got it! =
+222
+22PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+friend: received = hello = from user.
+user:waiting to send: = 222 =.
+prod: received a reply from friend: = Got it! =
+2
+222PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = 222 = from user.
+user: received a reply from friend: = Got it! =
+
+22
+2PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+user:waiting to send: = 222 =.
+friend: received = hello = from user.
+prod: received a reply from friend: = Got it! =
+22222
+PID=49173, PPID=28694  I am the parent. 
+prod:go ahead, enter a string
+friend: I am waiting to receive message from user.
+prod:waiting to send: = hello =.
+friend: received = 222 = from user.
+user: received a reply from friend: = Got it! =
+PID=49173, PPID=28694  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+friend: received = hello = from user.
+user:waiting to send: = 222 =.
+prod: received a reply from friend: = Got it! =
