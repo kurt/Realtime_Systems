@@ -307,7 +307,7 @@ friend: I am waiting to receive message from user.
 
 
 ________________________________________________________________________________________________________________________________________
-BETWEEN PROCESSORS MULTIPLE CONSUMERS
+BETWEEN MULTIPLE PRODUCERS ONE CONSUMER BETWEEN PROCESSES
 Embedded Message Passing Example Program
 creating channel
 could not create channel 
@@ -446,3 +446,115 @@ friend: I am waiting to receive message from user.
 friend: received = hello = from user.
 user:waiting to send: = 222 =.
 prod: received a reply from friend: = Got it! =
+
+________________________________________________________________________________________________________________________________________
+Embedded Message Passing Example Program
+creating channel
+could not create channel 
+PID=77846, PPID=28695  I am the main program.
+I am done waiting for PID[-1] with status 1
+Fork now..
+PID=81944, PPID=77846  I am the child.  
+Exec now..
+user has been called
+user connecting to channel. 
+
+user:go ahead, enter a string
+PID=77846, PPID=28695  I am the parent.  
+Exec now..
+PID=77846, PPID=28695  I am the second child.  
+friend has been called
+friend has been called
+friend connecting to channel. 
+friend connecting to channel. 
+
+
+friend: I am waiting to receive message from user.
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+1111PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+
+user:waiting to send: = 1111 =.
+friend: received = 1111 = from user.
+user: received a reply from friend: = Got it! =
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+user:go ahead, enter a string
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+11
+user:waiting to send: = 11 =.
+friend: received = 11 = from user.
+user: received a reply from friend: = Got it! =
+1PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+1
+1PID=77846, PPID=28695  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+user:waiting to send: = 11 =.
+friend: received = 11 = from user.
+user: received a reply from friend: = Got it! =
+11PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+
+11PID=77846, PPID=28695  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+user:waiting to send: = 111 =.
+friend: received = 111 = from user.
+user: received a reply from friend: = Got it! =
+1PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+11
+PID=77846, PPID=28695  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+user:waiting to send: = 11111 =.
+friend: received = 11111 = from user.
+user: received a reply from friend: = Got it! =
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+user:go ahead, enter a string
+friend: I am waiting to receive message from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
+PID=77846, PPID=28695  I am the parent. 
+friend: I am waiting to receive message from user.
+friend: received =  = from user.
