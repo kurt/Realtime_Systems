@@ -1,0 +1,170 @@
+## Starting application at 0x81000000 ...
+
+__________Board ID__________
+header:  ee3355aa
+name:    A335BNLT
+____________________________
+    BeagleBone Black detected
+
+VFPv3: fpsid=410330c3
+coproc_attach(10): attach fe07a3fc (fe07ad24)
+coproc_attach(11): attach fe07a3fc (fe07ad24)
+Welcome to QNX Neutrino 6.6.0 on the Texas Instruments AM335x BeagleBone (ARMv7 Cortex-A8 core) - Board
+Starting MMC/SD driver...
+starting I2C driver...
+starting WDT reset utility...
+starting Board ID driver...
+Board ID
+header:  ee3355aa
+name:    A335BNLT
+version: 000C
+serial:  3115BBBK0956
+config:  ▒▒▒▒▒▒
+Setting OS Clock from on-board RTC
+Sat Jan 01 00:00:00 GMT 2000
+Starting USB OTG Host driver...
+Starting SPI driver...
+Starting network driver...
+starting leds driver...
+# Path=0 - TI OMAP3 MMCHS
+ target=0 lun=0     Direct-Access(0) - SD:2 SA08G Rev: 2.1
+nano uEnv.txt
+sh: nano: cannot execute - No such file or directory
+# mk uEnv.txt
+sh: mk: cannot execute - No such file or directory
+# ls
+bin     dev     fs      proc    tmp     usr     var
+# pwd
+/
+# pidin
+     pid tid name               prio STATE       Blocked
+       1   1 boot/procnto-instr   0f READY
+       1   2 boot/procnto-instr 255r RECEIVE     1
+       1   3 boot/procnto-instr 255r RECEIVE     1
+       1   4 boot/procnto-instr  10r RUNNING
+       1   5 boot/procnto-instr 255r RECEIVE     1
+       1   6 boot/procnto-instr  10r RECEIVE     1
+       1   7 boot/procnto-instr  10r RECEIVE     1
+       1   8 boot/procnto-instr  10r RECEIVE     1
+       1   9 boot/procnto-instr  10r RECEIVE     1
+       1  10 boot/procnto-instr  10r RECEIVE     1
+       1  11 boot/procnto-instr  10r RECEIVE     1
+       2   1 proc/boot/slogger   10r RECEIVE     1
+       3   1 proc/boot/pipe      10r SIGWAITINFO
+       3   2 proc/boot/pipe      10r RECEIVE     1
+       3   3 proc/boot/pipe      10r RECEIVE     1
+       4   1 /boot/devc-seromap  10r RECEIVE     1
+       5   1 evb-mmcsd-jacinto5  10r SIGWAITINFO
+       5   2 evb-mmcsd-jacinto5  21r RECEIVE     1
+       5   3 evb-mmcsd-jacinto5  21r RECEIVE     4
+       5   4 evb-mmcsd-jacinto5  10r RECEIVE     10
+       5   5 evb-mmcsd-jacinto5  10r RECEIVE     13
+       5   6 evb-mmcsd-jacinto5  21r RECEIVE     7
+       5   7 evb-mmcsd-jacinto5  10r RECEIVE     7
+       5   8 evb-mmcsd-jacinto5  21r RECEIVE     7
+       6   1 ot/i2c-omap35xx-j5  10r RECEIVE     4
+    4103   1 oot/am335x-boardid  10r RECEIVE     1
+    4103   2 oot/am335x-boardid  10r RECEIVE     1
+    4103   3 oot/am335x-boardid  10r RECEIVE     1
+   12296   1 proc/boot/io-usb    10r SIGWAITINFO
+   12296   2 proc/boot/io-usb    10r RECEIVE     4
+   12296   3 proc/boot/io-usb    24r RECEIVE     10
+   12296   4 proc/boot/io-usb    21r RECEIVE     1
+   12296   5 proc/boot/io-usb    21r RECEIVE     13
+   12296   6 proc/boot/io-usb    10r RECEIVE     13
+   12297   1 oc/boot/devb-umass  10r SIGWAITINFO
+   12297   2 oc/boot/devb-umass  21r REPLY       12296
+   12298   1 oc/boot/spi-master  10r SIGWAITINFO
+   12298   2 oc/boot/spi-master  21r RECEIVE     5
+   12299   1 /boot/io-pkt-v4-hc  21r SIGWAITINFO
+   12299   2 /boot/io-pkt-v4-hc  21r RECEIVE     1
+   12299   3 /boot/io-pkt-v4-hc  21r RECEIVE     23
+   12300   1 c/boot/dhcp.client  10r SIGWAITINFO
+   12301   1 oc/boot/io-usb-dcd  10r SIGWAITINFO
+   12301   2 oc/boot/io-usb-dcd  21r CONDVAR     (0x806f060)
+   12301   3 oc/boot/io-usb-dcd  21r RECEIVE     4
+   12301   4 oc/boot/io-usb-dcd  21r RECEIVE     7
+   12301   5 oc/boot/io-usb-dcd  21r RECEIVE     7
+   12302   1 ot/devc-serusb_dcd  10r RECEIVE     1
+   12302   2 ot/devc-serusb_dcd  10r SIGWAITINFO
+   12302   3 ot/devc-serusb_dcd  21r CONDVAR     (0x8058ae8)
+   12302   4 ot/devc-serusb_dcd  21r CONDVAR     (0x8058af8)
+   12302   5 ot/devc-serusb_dcd  21r REPLY       12301
+   12302   6 ot/devc-serusb_dcd  21r REPLY       12301
+   16399   1 c/boot/am335x-leds  10r RECEIVE     1
+   16399   2 c/boot/am335x-leds  10r RECEIVE     1
+   16399   3 c/boot/am335x-leds  10r RECEIVE     1
+   16400   1 bin/sh              10r SIGSUSPEND
+   32785   1 proc/boot/pidin     10r REPLY       1
+# pidin | less
+sh: less: cannot execute - No such file or directory
+# pidin
+     pid tid name               prio STATE       Blocked
+       1   1 boot/procnto-instr   0f READY
+       1   2 boot/procnto-instr 255r RECEIVE     1
+       1   3 boot/procnto-instr 255r RECEIVE     1
+       1   4 boot/procnto-instr  10r RECEIVE     1
+       1   5 boot/procnto-instr 255r RECEIVE     1
+       1   6 boot/procnto-instr  10r RUNNING
+       1   7 boot/procnto-instr  10r RECEIVE     1
+       1   8 boot/procnto-instr  10r RECEIVE     1
+       1   9 boot/procnto-instr  10r RECEIVE     1
+       1  10 boot/procnto-instr  10r RECEIVE     1
+       1  11 boot/procnto-instr  10r RECEIVE     1
+       2   1 proc/boot/slogger   10r RECEIVE     1
+       3   1 proc/boot/pipe      10r SIGWAITINFO
+       3   2 proc/boot/pipe      10r RECEIVE     1
+       3   3 proc/boot/pipe      10r RECEIVE     1
+       3   4 proc/boot/pipe      10r RECEIVE     1
+       4   1 /boot/devc-seromap  10r RECEIVE     1
+       5   1 evb-mmcsd-jacinto5  10r SIGWAITINFO
+       5   2 evb-mmcsd-jacinto5  21r RECEIVE     1
+       5   3 evb-mmcsd-jacinto5  21r RECEIVE     4
+       5   4 evb-mmcsd-jacinto5  10r RECEIVE     10
+       5   5 evb-mmcsd-jacinto5  10r RECEIVE     13
+       5   6 evb-mmcsd-jacinto5  21r RECEIVE     7
+       5   7 evb-mmcsd-jacinto5  10r RECEIVE     7
+       5   8 evb-mmcsd-jacinto5  21r RECEIVE     7
+       6   1 ot/i2c-omap35xx-j5  10r RECEIVE     4
+    4103   1 oot/am335x-boardid  10r RECEIVE     1
+    4103   2 oot/am335x-boardid  10r RECEIVE     1
+    4103   3 oot/am335x-boardid  10r RECEIVE     1
+   12296   1 proc/boot/io-usb    10r SIGWAITINFO
+   12296   2 proc/boot/io-usb    10r RECEIVE     4
+   12296   3 proc/boot/io-usb    24r RECEIVE     10
+   12296   4 proc/boot/io-usb    21r RECEIVE     1
+   12296   5 proc/boot/io-usb    21r RECEIVE     13
+   12296   6 proc/boot/io-usb    10r RECEIVE     13
+   12297   1 oc/boot/devb-umass  10r SIGWAITINFO
+   12297   2 oc/boot/devb-umass  21r REPLY       12296
+   12298   1 oc/boot/spi-master  10r SIGWAITINFO
+   12298   2 oc/boot/spi-master  21r RECEIVE     5
+   12299   1 /boot/io-pkt-v4-hc  21r SIGWAITINFO
+   12299   2 /boot/io-pkt-v4-hc  21r RECEIVE     1
+   12299   3 /boot/io-pkt-v4-hc  21r RECEIVE     23
+   12300   1 c/boot/dhcp.client  10r SIGWAITINFO
+   12301   1 oc/boot/io-usb-dcd  10r SIGWAITINFO
+   12301   2 oc/boot/io-usb-dcd  21r CONDVAR     (0x806f060)
+   12301   3 oc/boot/io-usb-dcd  21r RECEIVE     4
+   12301   4 oc/boot/io-usb-dcd  21r RECEIVE     7
+   12301   5 oc/boot/io-usb-dcd  21r RECEIVE     7
+   12302   1 ot/devc-serusb_dcd  10r RECEIVE     1
+   12302   2 ot/devc-serusb_dcd  10r SIGWAITINFO
+   12302   3 ot/devc-serusb_dcd  21r CONDVAR     (0x8058ae8)
+   12302   4 ot/devc-serusb_dcd  21r CONDVAR     (0x8058af8)
+   12302   5 ot/devc-serusb_dcd  21r REPLY       12301
+   12302   6 ot/devc-serusb_dcd  21r REPLY       12301
+   16399   1 c/boot/am335x-leds  10r RECEIVE     1
+   16399   2 c/boot/am335x-leds  10r RECEIVE     1
+   16399   3 c/boot/am335x-leds  10r RECEIVE     1
+   16400   1 bin/sh              10r SIGSUSPEND
+   53265   1 proc/boot/pidin     10r REPLY       1
+# qconn &
+[1] 61457
+ldd:FATAL: Could not load library libtracelog.so.1
+# qconn
+qconn
+ldd:FATAL: Could not load library libtracelog.so.1
+[1] + Done (1)             qconn
+#
+
