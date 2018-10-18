@@ -167,4 +167,12 @@ qconn
 ldd:FATAL: Could not load library libtracelog.so.1
 [1] + Done (1)             qconn
 #
+# ifconfig
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 33192
+        inet 127.0.0.1 netmask 0xff000000
+dm0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+        address: 84:eb:18:e1:dc:3b
+        media: Ethernet none
+        inet 0.0.0.0 netmask 0xff000000 broadcast 255.255.255.255
+#
 
