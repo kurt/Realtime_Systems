@@ -1,0 +1,10 @@
+noswitch.c output raw:
+473272325 yield calls in 60 seconds = 7887872 yield/sec
+-------------------------------------------------------------------------------
+switch.c output raw d2l
+13759097 switches calls in 60 seconds = 229318 switches/sec (alarm_han)
+13759102 switches in 60 seconds = 229318 switches/sec (child_term)
+-------------------------------------------------------------------------------
+first attempt at 4 
+13803158 switches calls in 60 seconds = 230052 switches/sec (alarm_han)
+-------------------------------------------------------------------------------
