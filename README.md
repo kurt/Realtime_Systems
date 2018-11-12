@@ -10,3 +10,6 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 https://community.qnx.com/sf/wiki/do/viewPage/projects.bsp/wiki/TiAm335Beaglebone
 - how to format a fat32 as an active partition
 https://docs.microsoft.com/en-us/windows-server-essentials/install/create-a-bootable-usb-flash-drive
+
+Useful QNX image build slides
+https://slideplayer.com/slide/6203393/
